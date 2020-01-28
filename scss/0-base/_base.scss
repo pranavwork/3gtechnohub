@@ -1,0 +1,28 @@
+// ******************************
+// COLORS
+$primary: #008CFF;
+
+// ******************************
+// FONTS
+$montserrat: 'Montserrat',
+sans-serif;
+$open-sans: 'Open Sans',
+sans-serif;
+
+body {
+    font-family: $montserrat;
+}
+
+p {
+    font-family: $open-sans;
+}
+
+// ******************************
+// MIXINS
+@mixin bgimage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// ******************************

@@ -1,0 +1,99 @@
+#main-header {
+    position: relative;
+    z-index: 2;
+
+    #nav1 {
+        padding: .5rem 0;
+
+        a {
+            margin: 0 .5rem;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+                transition: .3s;
+            }
+
+            @media(min-width: 992px) {
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .column1 {
+            a {
+                margin-right: 15px;
+            }
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    #nav2 {
+        padding: .5rem 0;
+
+        .nav-item {
+            color: #fff;
+            margin: 0 10px;
+            position: relative;
+            font-weight: 700;
+
+            &::after {
+                content: "";
+                display: block;
+                background-color: transparent;
+                height: 3px;
+                width: 100%;
+                margin-top: 3px;
+                transition: .2s ease-in-out;
+            }
+
+            @media(min-width: 992px) {
+                &:last-child {
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+            }
+
+            &:hover {
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: $primary;
+                    height: 3px;
+                    width: 100%;
+                    margin-top: 3px;
+                    transition: .2s ease-in-out;
+                }
+            }
+
+            &.active {
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: $primary;
+                    height: 3px;
+                    width: 100%;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+#section1 {
+    margin-top: -122px;
+    // TODO: Value can change
+    height: 768px;
+    position: relative;
+
+    #own-carousel1 {}
+}
